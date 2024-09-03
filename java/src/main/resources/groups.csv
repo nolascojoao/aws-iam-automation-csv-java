@@ -1,0 +1,3 @@
+AdminGroup,arn:aws:iam::aws:policy/AdministratorAccess
+ReadOnlyGroup,arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
+S3FullAccessGroup,arn:aws:iam::aws:policy/AmazonS3FullAccess

@@ -1,0 +1,3 @@
+johndoe,StrongPassword123!,ReadOnlyGroup
+janedoe,StrongPassword123!,S3FullAccessGroup
+cloudadmin,StrongPassword123!,AdminGroup
