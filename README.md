@@ -47,7 +47,7 @@ The CSV files allow for easy customization of users and groups
 #### Using an IDE
 1. Clone the repository
 ```bash
-git clone https://github.com/your-repository/aws-iam-automation-csv-java.git
+git clone git@github.com:nolascojoao/aws-iam-automation-csv-java.git
 ```
 2. Open the project in Eclipse or any Java IDE of your choice
 3. Run the `Main.java` class from the IDE to execute the program
