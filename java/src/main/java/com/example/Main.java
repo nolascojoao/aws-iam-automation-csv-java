@@ -15,8 +15,8 @@ public class Main {
         CreateIAMGroups iamManager = new CreateIAMGroups();
         CreateIAMUsers createIAMUsers = new CreateIAMUsers();
 
-        String groupsCsvFilePath = "src/main/resources/groups.csv";
-        String usersCsvFilePath = "src/main/resources/users.csv";
+        String groupsCsvFilePath = "src/main/resources/csv/groups.csv";
+        String usersCsvFilePath = "src/main/resources/csv/users.csv";
 
         List<String[]> groupPolicyList = iamManager.readGroupsAndPoliciesFromCSV(groupsCsvFilePath);
         iamManager.createIAMGroupsAndAttachPolicies(iamClient, groupPolicyList);
