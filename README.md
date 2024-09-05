@@ -2,10 +2,10 @@
 
 ### Objective
 The goal of this project is to automate the following tasks in AWS IAM using the AWS SDK for Java:
-- Create Groups based on the groups.csv 
-- Attach Policies to the Groups
-- Create Users based on the users.csv 
-- Assign Users to Groups based on the input from users.csv
+- Create Groups based on the `groups.csv`
+- Attach Policies based on `groups.csv`
+- Create Users based on the `users.csv` 
+- Assign Users to Groups based on the `users.csv`
 
 ### Project Structure
 ```bash
