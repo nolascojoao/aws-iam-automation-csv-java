@@ -1,13 +1,15 @@
 # AWS IAM Automation with CSV and Java
 
-### Objective
-The goal of this project is to automate the following tasks in AWS IAM using the AWS SDK for Java:
+## Objective
+Automate AWS IAM tasks using AWS SDK for Java:
 - Create Groups based on the `groups.csv`
 - Attach Policies based on `groups.csv`
 - Create Users based on the `users.csv` 
 - Assign Users to Groups based on the `users.csv`
 
-### Project Structure
+---
+
+## Project Structure
 ```bash
 src/
 ├── com/
@@ -21,44 +23,52 @@ src/
 │       ├── groups.csv
 │       └── users.csv
 ```
-### Prerequisites
+---
+
+## Prerequisites
 - Java 1.8+
 - Maven 3.9.9+
-- AWS CLI installed and configured with an authenticated AWS user
+- AWS CLI
 
-### CSV Files
-The CSV files allow for easy customization of users and groups
+---
 
-- `users.csv` defines the **username**, **password** and the **group** to which the user will be assigned
+## CSV Files
+Customize users and groups through CSV files:
+- `users.csv`: Specifies the username, password and the group for each user.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d98bbc22-f2e7-4b07-8878-4781661e6cc5" alt="image"/>
 </p>
 
-- `groups.csv` defines the **group name** and the associated **policy ARN** that will be attached to the group
+- `groups.csv` Defines the group name and associated policy ARN.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c1493c45-ce3f-4b8e-89d6-00722ad59fb2" alt="image"/>
 </p>
 
-**Ensure that the CSV files are properly separated by commas (,)**
+- Ensure the CSV files are properly comma-separated (,).
 
-### Step-by-Step Execution
+---
+
+## Step-by-Step Execution
 #### Using an IDE
 1. Clone the repository
 ```bash
 git clone git@github.com:nolascojoao/aws-iam-automation-csv-java.git
 ```
-2. Open the project in Eclipse or any Java IDE of your choice
-3. Run the `Main.java` class from the IDE to execute the program
+2. Open the project in Eclipse or any Java IDE.
+3. Run `Main.java` to execute the program
 
 #### Using Maven
-1. Navigate to the project's root folder in your terminal
-2. Build the project and execute the program:
+1. Navigate to the project's root directory.
+2. Build and execute the project:
 ```bash
 mvn clean install
 mvn exec:java -Dexec.mainClass="com.example.Main"
 ```
+
+---
+
 #### Console Output
 
 <p align="center">
